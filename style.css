@@ -1,0 +1,258 @@
+body {
+    display: flex; 
+    font-family:sans-serif;
+    color: #121214;
+    background-image: linear-gradient(
+  45deg,
+  hsl(274deg 97% 52%) 0%,
+  hsl(268deg 99% 58%) 11%,
+  hsl(262deg 100% 61%) 22%,
+  hsl(257deg 100% 63%) 33%,
+  hsl(252deg 100% 65%) 44%,
+  hsl(246deg 100% 67%) 56%,
+  hsl(240deg 100% 68%) 67%,
+  hsl(235deg 100% 67%) 78%,
+  hsl(231deg 100% 65%) 89%,
+  hsl(227deg 100% 64%) 100%
+);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+
+}
+
+h2{
+  margin-top: 0px;
+  margin-bottom: 25px;
+  text-align:center;  
+  padding-bottom: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+h2::after {
+    background: linear-gradient(
+    90deg, 
+        hsl(223deg 67% 58%) 0%,
+        hsl(226deg 74% 59%) 10%,
+        hsl(231deg 80% 62%) 20%,
+        hsl(239deg 84% 65%) 30%,
+        hsl(249deg 89% 63%) 40%,
+        hsl(259deg 91% 60%) 50%,
+        hsl(263deg 85% 58%) 60%,
+        hsl(267deg 80% 55%) 70%,
+        hsl(271deg 75% 52%) 80%,
+        hsl(275deg 72% 50%) 90%,
+        hsl(278deg 77% 47%) 100%
+      );
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+ }
+
+.div-list{
+    width: 100%;
+    max-width: 540px;
+    min-height: 59vh;
+    margin: 5% auto;
+    
+    background-color: #fcfcfe;
+
+    padding: 50px 30px 50px;
+    border-radius: 8px;
+
+    box-shadow: 0 8px 10px -5px rgb(0 0 0 / 16%), 0 16px 24px 2px rgb(0 0 0 / 11%), 0 6px 30px 5px rgb(0 0 0 / 10%);
+} 
+
+.button-add{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 35px;
+    width: 35px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: #f0f0f0;
+    font-size: 30px;
+    margin-left: 5px;
+    text-align: center;
+    transition: scale 100ms ease-in;
+    cursor:pointer;
+    background-image: linear-gradient(
+  45deg,
+  hsl(253deg 81% 61%) 0%,
+  hsl(255deg 83% 62%) 11%,
+  hsl(257deg 84% 63%) 22%,
+  hsl(258deg 86% 64%) 33%,
+  hsl(259deg 88% 64%) 44%,
+  hsl(261deg 90% 65%) 56%,
+  hsl(262deg 93% 66%) 67%,
+  hsl(263deg 95% 67%) 78%,
+  hsl(265deg 97% 68%) 89%,
+  hsl(266deg 100% 69%) 100%
+);
+}
+    .button-add:hover {
+        scale: 1.05;
+    }
+
+.button-add{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 35px;
+    width: 35px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: #f0f0f0;
+    font-size: 30px;
+    margin-left: 5px;
+    text-align: center;
+    transition: scale 100ms ease-in;
+    cursor:pointer;
+    background-image: linear-gradient(
+  45deg,
+  hsl(253deg 81% 61%) 0%,
+  hsl(255deg 83% 62%) 11%,
+  hsl(257deg 84% 63%) 22%,
+  hsl(258deg 86% 64%) 33%,
+  hsl(259deg 88% 64%) 44%,
+  hsl(261deg 90% 65%) 56%,
+  hsl(262deg 93% 66%) 67%,
+  hsl(263deg 95% 67%) 78%,
+  hsl(265deg 97% 68%) 89%,
+  hsl(266deg 100% 69%) 100%
+);
+}
+    .button-add:hover {
+        scale: 1.05;
+    }
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.js-input{
+    font-size: 14px;
+    border-radius: 8px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+    border: 2px solid rgb(230, 228, 228);
+    color: rgb(14, 14, 16);
+    background: rgb(230, 228, 228);
+    display: inline;
+    height: 22px;
+    width: 480px;
+}
+    .js-input:hover {
+        border-color: #b1afb1;
+    }
+    .js-input:focus{
+        border-color: #9147ff;
+        outline: none;
+        background: #fff;
+    }
+
+    .js-deleteToDo{
+        display:inline-flex;
+        justify-content:center;
+        align-items:center;
+        height: 35px;
+        width: 35px;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        background: none;
+        color: #a09f9f;
+        font-size: 15px;
+        font-weight:bold;
+        margin-left: 5px;
+        text-align: center;
+        transition: scale 100ms ease-in;
+        cursor:pointer;
+    }
+        .js-deleteToDo:hover {
+            scale: 1.05;
+        }
+
+        .complete-but{
+            display:inline-flex;
+            justify-content:center;
+            align-items:center;
+            height: 30px;
+            width: 30px;
+            border-radius: 8px;
+            outline: none;
+            border: none;
+            color: #f0f0f0;
+            font-size: 15px;
+            font-weight:bold;
+            margin-left: 5px;
+            text-align: center;
+            transition: scale 100ms ease-in;
+            cursor:pointer;
+            background-image: linear-gradient(
+          45deg,
+          hsl(253deg 81% 61%) 0%,
+          hsl(255deg 83% 62%) 11%,
+          hsl(257deg 84% 63%) 22%,
+          hsl(258deg 86% 64%) 33%,
+          hsl(259deg 88% 64%) 44%,
+          hsl(261deg 90% 65%) 56%,
+          hsl(262deg 93% 66%) 67%,
+          hsl(263deg 95% 67%) 78%,
+          hsl(265deg 97% 68%) 89%,
+          hsl(266deg 100% 69%) 100%
+        );
+        }
+            .complete-but:hover {
+                scale: 1.05;
+            }
+        
+            .not-complete-but{
+                display:inline;
+                height: 30px;
+                width: 30px;
+                border-radius: 8px;
+                outline: none;
+                border: 2px solid #b1afb1;
+                color: #f0f0f0;
+                font-size: 15px;
+                font-weight:bold;
+                margin-left: 5px;
+                text-align: center;
+                transition: scale 100ms ease-in;
+                cursor:pointer;
+                background: none;
+            }
+                .not-complete-but:hover {
+                    scale: 1.05;
+                }
+
+.item {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item2{
+    display: flex;
+    align-items: center;
+}
+
+.list{
+    margin-left: 10px;
+}
+
+#complete{
+    text-decoration: line-through;
+}
